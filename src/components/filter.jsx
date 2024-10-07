@@ -11,7 +11,7 @@ export const Filter = ({ tasks, setRenderTasks }) => {
     } else if (activeFilter === "completed") {
       setRenderTasks(tasks.filter(({ isCompleted }) => isCompleted));
     } else {
-      setRenderTasks(tasks); // Фильтр "все"
+      setRenderTasks(tasks); 
     }
   }, [activeFilter, tasks]);
   return (
