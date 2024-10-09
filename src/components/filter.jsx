@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 export const Filter = ({ tasks, setRenderTasks }) => {
   const [activeFilter, setActiveFilter] = useState("all");
-  const [completedFilter, setCompletedFilter] = useState("completed");
 
 
   useEffect(() => {
@@ -22,9 +21,7 @@ export const Filter = ({ tasks, setRenderTasks }) => {
     >
       <option value="all">все</option>
       <option value="active">активные</option>
-      <option value="completed"
-      onChange={(e) => setCompletedFilter(e.target.value)}
-      >завершённые
+      <option value="completed">завершённые
       </option>
     </select>
   );
